@@ -70,7 +70,7 @@ public class Server {
 						declaredMethodsList.add(declaredMethod.getName());
 					}
 
-					System.out.println("Declared methods: " + String.join(",", declaredMethodsList));
+					System.out.println("Declared methods: " + String.join(", ", declaredMethodsList));
 
 					System.out.println("Calling main()...");
 					var mainMethod = classLoad.getMethod("main", String[].class);
